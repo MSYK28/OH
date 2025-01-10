@@ -376,6 +376,21 @@ button {
   background-color: rgb(211,47,47);
 }
 
+.download_button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: .25rem;
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+}
+
+.download_button:hover {
+  background-color: rgb(211,47,47);
+}
+
+
 /*=============== SPECIALTY ===============*/
 .specialty__button {
   margin-left: 1.25rem;
@@ -418,17 +433,28 @@ button {
   transition: max-height 0.3s ease; /* Smooth expansion when toggling */
 }
 
-.read-more-btn {
-  font-size: var(--small-font-size);
+/* .read-more-btn {
+  /* font-size: var(--small-font-size); 
   text-transform: uppercase;
-  color: var(--first-color);
+  color: #000;
   display: inline-flex;
   align-items: center;
   column-gap: .75rem;
   border: none;
   padding: 5px 10px;
 
+} */
+
+.info_paragraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Initially show only 6 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 12em; /* Adjust based on line height */
+  line-height: 2em; /* Adjust as per your font size */
 }
+
 
 .read-more-btn i {
   font-size: 1.25rem;
@@ -439,24 +465,6 @@ button {
   transform: translateX(.25rem);
 }
 
-/* .read-more-btn {
-  background-color: var(--first-color, #d32f2f);
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.read-more-btn:hover {
-  background-color: var(--first-color-alt, #b71c1c);
-} */
-
-/*=============== PRODUCTS ===============*/
 /*=============== PRODUCTS SECTION ===============*/
 .products__container {
   margin-bottom: 2rem;
@@ -676,6 +684,11 @@ button {
 
 .quality_description span {
   color: var(--first-color);
+}
+
+.alt_text{
+  color: blue;
+  font-size: 0.8rem;
 }
 
 .quality_buttons {
