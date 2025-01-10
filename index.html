@@ -28,7 +28,7 @@
         <nav class="nav container">
             <a href="" class="nav__logo">
                 <img class="nav__logo-img" src="assets/img/oh_hell_img/logo.webp"></img>
-                OH Hell Ireland Cards
+                OH Hell Ireland Cards Association
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -165,7 +165,8 @@
                             Read More
                             <i class="bx bx-right-arrow-alt"></i>
                         </button>
-                        <a target="_blank" class="download_button" href="assets/files/Ohell Irish championship rules.pdf" download>
+                        <a target="_blank" class="download_button"
+                            href="assets/files/Ohell Irish championship rules.pdf" download>
                             Download Rules
                         </a>
                     </div>
@@ -186,9 +187,8 @@
                         </div>
                         <p class="quality_description">
                             There are many people playing <span>OH HELL</span> socially but the annual OH HELL
-                            Championship
-                            brings together the best card players.
-                            The current OH HELL champion is <span>Dr Brian McManus</span>, pictured with the trophy.The
+                            Championship brings together the best card players. The current OH HELL champion is <span>Dr
+                                Brian McManus</span>, pictured with the trophy. The
                             next championship is scheduled for <span>November 2025 </span>– date to be determined
                         </p>
                     </div>
@@ -274,7 +274,7 @@
 
             <div class="footer_group">
                 <ul class="footer_Social">
-                    <a target="_blank" href="   " class="footer_social-link">
+                    <a target="_blank" href="https://twitter.com/petercosgrove" class="footer_social-link">
                         <i class="bx bxl-twitter"></i>
                     </a>
                 </ul>
@@ -299,7 +299,7 @@
         readMoreButtons.forEach((button) => {
             button.addEventListener('click', function () {
                 const description = this.parentElement
-                .previousElementSibling; // Get the associated paragraph
+                    .previousElementSibling; // Get the associated paragraph
                 const isExpanded = description.style.webkitLineClamp === 'none'; // Check expanded state
 
                 if (isExpanded) {
